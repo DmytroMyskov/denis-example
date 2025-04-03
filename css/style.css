@@ -1,0 +1,187 @@
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  --text-color: #000000;
+  --background-color: #828282;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 970px;
+  margin: 0 auto;
+}
+
+header {
+  font-size: 18px;
+  color: var(--background-color);
+}
+
+:link,
+:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  padding: 0;
+  margin-block: 25px;
+}
+
+a:hover {
+  color: var(--text-color);
+  transition: all 0.5s ease-in-out;
+}
+
+hr {
+  margin: 0;
+  color: var(--background-color);
+}
+
+.hero {
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-block: 12px 50px;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.about-me {
+
+  h2 {
+    margin-block: 100px 50px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-block: unset;
+  }
+
+  p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.skills {
+
+  h2 {
+    margin-block: 200px 20px;
+  }
+
+  p {
+    text-align: center;
+    margin-block: 0 50px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin-block: unset;
+
+    li {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--background-color);
+      text-align: center;
+    }
+
+    p {
+      margin-block: 25px 60px;
+    }
+
+    .figma {
+      margin-block: 25px 80px;
+    }
+  }
+}
+
+.portfolio {
+
+  h2 {
+    margin-block: 200px 50px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    text-align: center;
+    margin-block: 40px 70px;
+  }
+}
+
+footer {
+
+  h2 {
+    margin-block: 200px 20px;
+  }
+
+  p {
+    text-align: center;
+    line-height: auto;
+    margin-block: 0;
+  }
+
+  button {
+    display: block;
+    margin: 60px auto 30px;
+    width: 180px;
+    height: 44px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 22px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--background-color);
+    transition: all 0.5s ease-in-out;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+
+  li:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    color: var(--background-color);
+  }
+}
